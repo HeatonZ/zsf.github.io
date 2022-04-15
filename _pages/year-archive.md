@@ -9,7 +9,6 @@ redirect_from:
 
 {% for post in site.albums reversed %}
   ???
-  {% post.title %}
 {% endfor %}
 
 [证件照](/album/id)  
