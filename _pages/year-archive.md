@@ -7,6 +7,11 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
+{% for post in site.albums reversed %}
+  ???
+  {% post.title %}
+{% endfor %}
+
 [证件照](/album/id)  
 [集体照](/album/group)  
 [生活照](/album/life)  
