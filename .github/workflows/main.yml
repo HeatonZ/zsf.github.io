@@ -6,12 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - run: python markdown_generator/photos.py
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup
+        uses: actions/setup-python@v2
+      - name: run  
+        run: python markdown_generator/photos.py
       
       - name: commit
-      - run: |
+        run: |
           git config --global user.email self@github.com
           git config --global user.name self
           git add .
