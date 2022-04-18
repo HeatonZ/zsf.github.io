@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+
+{% include carousel.html height="50" unit="%" duration="7" number="2" %}
 <pre>
 此网站用于纪念韩克利研究员。
                 ——女儿韩博然

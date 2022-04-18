@@ -192,6 +192,9 @@ collections:
   albums:
     output: true
     permalink: /:collection/:path/
+  photos:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -255,6 +258,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: photos
+    values:
+      layout: single
+      author_profile: false
 
 # Sass/SCSS
 sass:
